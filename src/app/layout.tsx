@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { AppIcon } from "@/components/app-icons";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,9 +26,104 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <div className="bg-gradient-to-r from-green-700 to-green-600 text-white">
+          <div className="max-w-7xl mx-auto px-6 py-3">
+            {/* Top Section - Logo and Address */}
+            <div className="flex items-start justify-between pb-2">
+              <div className="flex items-center gap-3">
+                {/* Logo */}
+                <div className="text-yellow-300">
+                  <div className="text-xl font-bold italic">Logo</div>
+                </div>
+              </div>
+
+              {/* Address */}
+              <div className="text-sm text-yellow-100">
+                Yay Htwet Oo Road, Taunggyi 06011, Myanmar (Burma)
+              </div>
+
+              {/* Icons */}
+              <div className="flex items-center gap-4">
+                <AppIcon name="map" />
+                <AppIcon name="bell" />
+                <AppIcon name="phone" />
+              </div>
+            </div>
+
+            {/* Navigation */}
+            <nav className="border-t border-green-500 flex justify-end pt-2">
+              <ul className="flex items-center gap-8 text-sm">
+                <li>
+                  <a
+                    href="/home"
+                    className="hover:text-yellow-300 transition-colors font-medium">
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="hover:text-yellow-300 transition-colors font-medium">
+                    Outlet
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="hover:text-yellow-300 transition-colors font-medium">
+                    The Reading Room
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="hover:text-yellow-300 transition-colors font-medium">
+                    About Us
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="hover:text-yellow-300 transition-colors font-medium">
+                    Menu
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
         {children}
+        <div className="bg-green-900">
+          <div className="p-4 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 lg:gap-8 max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
+            {/* Email Subscription Section */}
+            <div className="flex-1 max-w-md lg:max-w-lg">
+              <h3 className="text-white font-medium mb-2 sm:mb-3 text-base sm:text-lg">
+                Join our mailing list for updates
+              </h3>
+              <div className="flex flex-col sm:flex-row gap-2 sm:gap-3">
+                <input
+                  type="email"
+                  placeholder="Email"
+                  className="flex-1 px-4 py-2 sm:py-2.5 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-400 text-sm sm:text-base bg-white"
+                />
+                <button className="bg-green-600 hover:bg-green-500 text-white px-6 py-2 sm:py-2.5 rounded font-medium transition-colors text-sm sm:text-base whitespace-nowrap">
+                  Subscribe Now
+                </button>
+              </div>
+            </div>
+
+            {/* Social Media Icons Section */}
+            <div className="flex items-center justify-start lg:justify-end gap-4 sm:gap-6 md:gap-8 lg:gap-9">
+              <AppIcon name="ig" className="text-white" />
+              <AppIcon name="fb" className="text-white" />
+              <AppIcon name="twitter" className="text-white" />
+              <div className="w-10 h-10 flex items-center justify-center cursor-pointer font-bold text-white  text-lg">
+                𝕏
+              </div>
+            </div>
+          </div>
+        </div>
       </body>
     </html>
   );
