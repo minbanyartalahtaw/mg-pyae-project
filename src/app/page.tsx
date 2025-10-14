@@ -5,7 +5,7 @@ export default function Home() {
       <div className="mb-12 flex justify-center">
         <div className="border-2 border-dashed border-purple-300 rounded-lg p-8 inline-block">
           <a
-            href="#"
+            href="/home"
             className="text-lg font-semibold text-gray-800 underline hover:text-purple-600 transition-colors">
             Visit Us &gt;&gt;
           </a>

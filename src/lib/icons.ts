@@ -6,6 +6,7 @@ import {
   Instagram,
   Facebook,
   Twitter,
+  Mail,
 } from "lucide-react";
 
 // Pick ONLY the icons your app should use.
@@ -17,6 +18,7 @@ export const ICONS = {
   ig: Instagram,
   fb: Facebook,
   twitter: Twitter,
+  mail: Mail,
 } satisfies Record<string, LucideIcon>;
 
 export type IconName = keyof typeof ICONS;

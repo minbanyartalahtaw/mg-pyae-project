@@ -39,7 +39,7 @@ export default function RootLayout({
               </div>
 
               {/* Address */}
-              <div className="text-sm text-yellow-100">
+              <div className="text-sm text-yellow-100 hidden sm:block">
                 Yay Htwet Oo Road, Taunggyi 06011, Myanmar (Burma)
               </div>
 
@@ -61,30 +61,24 @@ export default function RootLayout({
                     Home
                   </a>
                 </li>
+
                 <li>
                   <a
-                    href="#"
+                    href="/reading"
                     className="hover:text-yellow-300 transition-colors font-medium">
-                    Outlet
+                    Reading Room
                   </a>
                 </li>
                 <li>
                   <a
-                    href="#"
-                    className="hover:text-yellow-300 transition-colors font-medium">
-                    The Reading Room
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
+                    href="/aboutus"
                     className="hover:text-yellow-300 transition-colors font-medium">
                     About Us
                   </a>
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="/menu"
                     className="hover:text-yellow-300 transition-colors font-medium">
                     Menu
                   </a>
