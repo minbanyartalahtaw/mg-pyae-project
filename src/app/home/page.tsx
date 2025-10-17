@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Page() {
   return (
     <>
@@ -5,19 +7,13 @@ export default function Page() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8 lg:gap-12">
             {/* Tea Plantation Image */}
-            <div className="w-full md:flex-1">
-              <div className="relative">
-                <div className="w-full h-64 sm:h-72 md:h-80 bg-green-800 rounded-full overflow-hidden">
-                  <div className="w-full h-full bg-gradient-to-br from-green-700 to-green-900 flex items-center justify-center">
-                    <span className="text-white text-sm">
-                      Tea Plantation Image
-                    </span>
-                  </div>
-                </div>
-                {/* Small tea image overlay */}
-                <div className="absolute -bottom-3 -left-3 md:-bottom-4 md:-left-4 w-20 h-20 md:w-24 md:h-24 bg-green-600 rounded-lg shadow-lg"></div>
-              </div>
-            </div>
+            <Image
+              className="rounded-xl"
+              src={"/images/home1.jpg"}
+              alt="noimage found"
+              width={500}
+              height={100}
+            />
 
             {/* Text Content */}
             <div className="w-full md:flex-1">
@@ -52,8 +48,20 @@ export default function Page() {
                   Outlet
                 </h3>
                 <div className="grid grid-cols-2 gap-3 md:gap-4">
-                  <div className="bg-gray-300 h-24 sm:h-28 md:h-32 rounded-lg"></div>
-                  <div className="bg-gray-300 h-24 sm:h-28 md:h-32 rounded-lg"></div>
+                  <Image
+                    className="rounded-xl"
+                    src={"/images/home2.jpg"}
+                    alt="noimage found"
+                    width={250}
+                    height={100}
+                  />{" "}
+                  <Image
+                    className="rounded-xl"
+                    src={"/images/home3.jpg"}
+                    alt="noimage found"
+                    width={250}
+                    height={100}
+                  />
                 </div>
               </div>
               <div className="w-full md:flex-1 bg-green-100 rounded-lg p-4 sm:p-5 md:p-6">
@@ -87,14 +95,26 @@ export default function Page() {
                 </p>
               </div>
               <div className="w-full md:flex-1 order-1 md:order-2">
-                <div className="bg-gray-300 h-48 sm:h-56 md:h-64 rounded-lg"></div>
+                <Image
+                  className="rounded-xl"
+                  src={"/images/home3.jpg"}
+                  alt="noimage found"
+                  width={500}
+                  height={100}
+                />
               </div>
             </div>
 
             {/* Yangon (2007) */}
             <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-start">
               <div className="w-full md:flex-1">
-                <div className="bg-gray-300 h-48 sm:h-56 md:h-64 rounded-lg"></div>
+                <Image
+                  className="rounded-xl"
+                  src={"/images/home4.jpg"}
+                  alt="noimage found"
+                  width={500}
+                  height={100}
+                />
               </div>
               <div className="w-full md:flex-1 bg-green-100 rounded-lg p-4 sm:p-5 md:p-6">
                 <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-2 md:mb-3">
@@ -131,7 +151,13 @@ export default function Page() {
                 </p>
               </div>
               <div className="w-full md:flex-1 order-1 md:order-2">
-                <div className="bg-gray-300 h-48 sm:h-56 md:h-64 rounded-lg"></div>
+                <Image
+                  className="rounded-xl"
+                  src={"/images/home6.jpg"}
+                  alt="noimage found"
+                  width={400}
+                  height={100}
+                />
               </div>
             </div>
           </div>

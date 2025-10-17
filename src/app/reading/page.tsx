@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function WhiskeyBarMembership() {
   return (
     <div className="min-h-screen bg-green-50">
@@ -28,9 +30,14 @@ export default function WhiskeyBarMembership() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-10 lg:gap-12 items-center">
             {/* Image Placeholder */}
-            <div className="bg-gray-200 h-72 sm:h-80 md:h-96 lg:h-[500px] rounded-lg flex items-center justify-center shadow-md">
-              <span className="text-gray-400 text-sm">Image Placeholder</span>
-            </div>
+
+            <Image
+              className="rounded-xl"
+              alt="no"
+              src="/images/readingroom1.jpg"
+              width={600}
+              height={100}
+            />
 
             {/* Content Column */}
             <div className=" rounded-lg p-6 sm:p-8 md:p-10 ">
@@ -103,9 +110,13 @@ export default function WhiskeyBarMembership() {
             </div>
 
             {/* Image Placeholder */}
-            <div className="bg-gray-200 h-72 sm:h-80 md:h-96 lg:h-[500px] rounded-lg flex items-center justify-center shadow-md order-first lg:order-last">
-              <span className="text-gray-400 text-sm">Image Placeholder</span>
-            </div>
+            <Image
+              className="rounded-xl"
+              alt="no"
+              src="/images/readingroom2.jpg"
+              width={600}
+              height={100}
+            />
           </div>
         </div>
       </section>
@@ -115,9 +126,13 @@ export default function WhiskeyBarMembership() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-10 lg:gap-12 items-center">
             {/* Image Placeholder */}
-            <div className="bg-gray-200 h-72 sm:h-80 md:h-96 lg:h-[450px] rounded-lg flex items-center justify-center shadow-md order-2 lg:order-1">
-              <span className="text-gray-400 text-sm">Image Placeholder</span>
-            </div>
+            <Image
+              className="rounded-xl"
+              alt="no"
+              src="/images/readingroom3.jpeg"
+              width={600}
+              height={100}
+            />
 
             {/* Contact Card */}
             <div className=" rounded-lg p-8 sm:p-10 md:p-14 lg:p-16 flex flex-col items-center justify-center text-center order-1 lg:order-2  min-h-[350px] sm:min-h-[400px]">

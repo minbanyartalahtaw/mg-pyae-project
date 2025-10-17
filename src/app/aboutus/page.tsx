@@ -1,4 +1,5 @@
 import { AppIcon } from "@/components/app-icons";
+import Image from "next/image";
 
 export default function AboutUsPage() {
   return (
@@ -8,9 +9,13 @@ export default function AboutUsPage() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-10 lg:gap-12 items-center">
             {/* Image Placeholder */}
-            <div className="bg-gray-200 h-96 sm:h-[450px] md:h-[500px] lg:h-[600px] rounded-lg flex items-center justify-center shadow-lg order-2 lg:order-1">
-              <span className="text-gray-400 text-sm">Founder Image</span>
-            </div>
+            <Image
+              className="rounded-xl"
+              alt="no"
+              src="/images/aboutus1.jpeg"
+              width={500}
+              height={100}
+            />
 
             {/* Founder Story */}
             <div className="order-1 lg:order-2">
